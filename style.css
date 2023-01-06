@@ -18,14 +18,16 @@
 .container {
     background: black;
     display: inline-block;
-    border: 5px solid black;
+    border: 5px solid black; 
   }
   
-.grid {
+  .grid {
     display: grid;
-    grid-template-columns: repeat(16, 80px);
-    grid-template-rows: repeat(16, 80px);
+    grid-template-columns: repeat(3, 80px);
+    grid-template-rows: repeat(3, 80px);
     grid-gap: 5px;
+    background-color: #2196F3;
+    padding: 10px;
   }
   
   .cell {
@@ -37,4 +39,22 @@
     font-size: 3rem;
     font-weight: bold;
     background: white;
+  }
+
+  button{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+
+  button:hover{
+    background-color: rgb(26, 75, 50);
+    color: white;
   }
